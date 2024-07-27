@@ -1,11 +1,13 @@
 const myLibrary = [];
 
-//i should just loop through this and all the books that aren't added to the dom
-function Book(author,title,pages,isRead) {
+//creating class
+class Book{
+  constructor(author,title,pages,isRead){
   this.author = author;
   this.title = title;
   this.pages = pages;
   this.isRead = isRead;
+  }
 }
 
 
