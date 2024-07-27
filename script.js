@@ -11,10 +11,6 @@ class Book{
 }
 
 
-function addBookToLibrary() {
-  // do stuff here
-}
-
 
 //create a button observer
 
