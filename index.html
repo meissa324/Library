@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="library-container">
+        <div class="library-header-row">
+            <h1>Library</h1>
+        </div>
+        <div class="library-sidebar">
+            <form action="">
+                <legend>Add books?</legend>
+                <ul>
+                    <li>
+                        <label for="book-author">Author: </label>
+                        <input type="text" placeholder="author" id="book-author">    
+                    </li>
+
+                    <li>
+                        <label for="book-author">Title: </label>
+                        <input type="text" placeholder="book title" id="book-title">    
+                    </li>
+
+                    <li>
+                        <label for="book-pages">Number of pages: </label>
+                        <input type="number" placeholder="number of pages" id="book-pages">
+                    </li>
+
+                    <li>
+                        <label for="book-read">Read?: </label>
+                        <input type="checkbox" id="book-read">
+                    </li>
+
+                    <li>
+                        <button type="button" id="book-submit">Submit</button>
+                    </li>
+
+                </ul>
+            </form>
+        </div>
+        <div class="library-content-container">
+
+            <!-- <div> example card 
+                <h1 class="book-title">Title</h1>
+                <div class="icon"></div>
+                <div>
+                    <button>delete</button>
+                    <button>read</button>
+                </div>
+            </div> -->
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

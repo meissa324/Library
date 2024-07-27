@@ -1,0 +1,105 @@
+/* Todo
+    1)reset to look decent
+    2)make corners round
+todo */
+
+/*? for structure */
+
+:root{
+    font-size: 16px;
+}
+
+.library-container{
+    min-width: 100svw;
+    min-height: 100svh;
+    /* border: 1rem solid blue; */
+}
+.library-header-row{
+    border-bottom: 0.5rem solid black;
+}
+.library-sidebar{
+    border-right: 0.5rem solid black;
+}
+/* styling for unexistant div */
+.library-container > div{
+    /* border: 1rem solid rgb(255, 0, 0); */
+    background-color: rgba(255, 0, 0,0.3);
+}
+
+
+/*? properties/styling */
+.library-content-container{
+    padding: 2rem;
+}
+
+.library-content-container >div{ /* content's cards*/
+    background-color: white;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+.library-content-container >div>div{ /*cards' buttons container(row) */
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    /* max-width: 100%; */
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 3rem 0 3rem;
+}
+.library-content-container >div> div >button{ /*cards' buttons */
+    min-height: 3rem;
+    flex: 1 1 0;
+    border-radius: 0.5rem;
+}
+
+
+.icon { /*card's book icon*/
+    background-image: url("icons/book-solid.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: fit-content; /* Adjust as needed */
+    min-height: 35%; /* Adjust as needed */
+  }
+/*? layout */
+
+.library-container{
+    display: grid;
+    grid-template-columns: 1fr 13fr;
+    grid-template-rows: 100px 8fr;
+}
+
+.library-header-row{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.library-sidebar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.library-content-container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr)) ;
+    grid-auto-rows: 20rem; 
+    gap: 2rem;
+    justify-items: center;
+}
+
